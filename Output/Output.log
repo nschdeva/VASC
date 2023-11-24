@@ -1,0 +1,61 @@
+
+
+Scanning sites listed in the file.
+	gatech.instructure.com | 3.225.129.2
+	github.gatech.edu | 130.207.175.93
+	oscar.gatech.edu | 130.207.176.30
+	registrar.gatech.edu/calendar/ | Cannot establish connection
+	catalog.gatech.edu | 12.175.6.54
+
+File "Unavailable.csv" created with list of non-accessible websites.
+Unavailable list: 
+	registrar.gatech.edu/calendar/
+
+List of websites that were hosted on external IP's exported to Externals.csv
+
+Proceeding with websites that lie in the network 164.100.*.* 
+IP list:
+	130.207.175.93	| github.gatech.edu
+	130.207.176.30	| oscar.gatech.edu
+
+
+Scanning specified ports for access:
+	Website 	|  State	IP		80 443 8080 8081
+	github.gatech.edu |  ['up', '130.207.175.93', 'Y', 'Y', 'N', 'N']
+	oscar.gatech.edu |  ['up', '130.207.176.30', 'Y', 'Y', 'N', 'N']
+
+
+List of websites giving error in PortScan exported to PortScanError.csv
+
+Port access data for websites in IP list exported to SitePortAccess.csv
+
+
+
+Retrieving ciphersuites for websites with port443 available.
+Website:
+	github.gatech.edu
+	oscar.gatech.edu
+
+
+CipherSuite list for SSLv2 exported to SSLv2Ciphers.csv
+CipherSuite list for SSLv3 exported to SSLv3Ciphers.csv
+CipherSuite list for TLSv1.0 exported to TLSv10Ciphers.csv
+CipherSuite list for TLSv1.1 exported to TLSv11Ciphers.csv
+CipherSuite list for TLSv1.2 exported to TLSv12Ciphers.csv
+List of websites with weak ciphersuites exported to WeakCipherSuiteWebsites.csv
+Security Protocol data exported to Packages.csv
+
+
+List of exceptions exported to Exceptions.csv
+
+List of vulnerable websites in IP list exported to Vulnerable.csv
+
+
+XML tree created for websites in the SecureSites list
+XML tree appended with websites in the Exceptions list
+
+
+Complete
+---------------------------------------------------------
+
+
