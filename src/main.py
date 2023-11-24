@@ -76,7 +76,7 @@ elif args.websites:
     internals, externals = [], []
     for i in iplist:
         ip = i.split('.')
-        if ip[0]=='164' and ip[1]=='100':
+        if ip[0]=='130' and ip[1]=='207':
             internals.append(i)
 
     for w in websites:
