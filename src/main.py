@@ -4,7 +4,7 @@ import SiteScan
 import PortScan
 import CipherScan
 import ExportXML
-import ListUnique as lu
+import numpy as np
 import sys
 
 
@@ -62,7 +62,7 @@ elif args.websites:
     rem = [x.find("://")+1 or 0 for x in websites]
     rem = [x and x+2 for x in rem]
     websites = [x[0][x[1]:] for x in zip(websites,rem)]
-    websites = lu.unique(websites)
+    websites = np.unique(websites)
 
     iplist, siteDict = SiteScan.getIP(pd, websites)
 
@@ -70,7 +70,7 @@ elif args.websites:
         print('\nNone of the given websites could be accessed. Exiting.\n\n')
         exit()
 
-    iplist = lu.unique(iplist)
+    iplist = np.unique(iplist)
     websites = list(siteDict)
 
     internals, externals = [], []
