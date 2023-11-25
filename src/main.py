@@ -75,11 +75,12 @@ elif args.websites:
 
     iplist = np.unique(iplist)
     websites = list(siteDict)
-
+    print("pd", pd.DataFrame())
+    print("websites", websites)
     internals, externals = [], []
     for i in iplist:
         ip = i.split('.')
-        if ip[0]=='164' and ip[1]=='100':
+        if ip[0]=='130' and ip[1]=='207':
             internals.append(i)
 
     for w in websites:
@@ -97,7 +98,7 @@ elif args.websites:
         print('\nList of websites that were hosted on external IP\'s exported to Externals.csv')
         
         
-    print('\nProceeding with websites that lie in the network 164.100.*.* \nIP list:')
+    print('\nProceeding with websites that lie in the network 130.207.*.* \nIP list:')
     for w in websites:
         print("\t" + siteDict[w] + "\t| " + w)
         

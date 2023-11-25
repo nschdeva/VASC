@@ -1,1 +1,2 @@
 Website,IP,SSLv2,SSLv3,TLSv1.0,TLSv1.1,TLSv1.2
+example.com,192.168.1.1,N,N,Y,Y,Y
