@@ -2,11 +2,11 @@
 
 Scanning sites listed in the file.
 	buzzport.gatech.edu | 130.207.188.44
-	career.gatech.edu | 34.215.37.29
+	career.gatech.edu | 34.216.237.15
 	catalog.gatech.edu | 12.175.6.54
 	coi.research.gatech.edu/ | Cannot establish connection
 	facilities.gatech.edu/submit-detour-notice | Cannot establish connection
-	gatech.instructure.com | 52.45.157.1
+	gatech.instructure.com | 52.21.245.37
 	github.gatech.edu | 130.207.175.93
 	health.gatech.edu | 34.215.37.29
 	hr.gatech.edu/careers | Cannot establish connection
@@ -29,20 +29,10 @@ List of websites that were hosted on external IP's exported to Externals.csv
 
 Proceeding with websites that lie in the network 164.100.*.* 
 IP list:
-	130.207.188.44	| buzzport.gatech.edu
-	130.207.175.93	| github.gatech.edu
-	130.207.7.95	| omscs.gatech.edu
-	130.207.176.30	| oscar.gatech.edu
-	130.207.188.46	| scholars.em.gatech.edu
 
 
 Scanning specified ports for access:
 	Website 	|  State	IP		80 443 8080 8081
-	buzzport.gatech.edu |  ['up', '130.207.188.44', 'Y', 'Y', 'N', 'N']
-	github.gatech.edu |  ['up', '130.207.175.93', 'Y', 'Y', 'N', 'N']
-	omscs.gatech.edu |  ['up', '130.207.7.95', 'Y', 'Y', 'N', 'N']
-	oscar.gatech.edu |  ['up', '130.207.176.30', 'Y', 'Y', 'N', 'N']
-	scholars.em.gatech.edu |  ['up', '130.207.188.46', 'Y', 'Y', 'N', 'N']
 
 
 List of websites giving error in PortScan exported to PortScanError.csv
@@ -53,11 +43,6 @@ Port access data for websites in IP list exported to SitePortAccess.csv
 
 Retrieving ciphersuites for websites with port443 available.
 Website:
-	buzzport.gatech.edu
-	github.gatech.edu
-	omscs.gatech.edu
-	oscar.gatech.edu
-	scholars.em.gatech.edu
 
 
 CipherSuite list for SSLv2 exported to SSLv2Ciphers.csv
@@ -65,7 +50,6 @@ CipherSuite list for SSLv3 exported to SSLv3Ciphers.csv
 CipherSuite list for TLSv1.0 exported to TLSv10Ciphers.csv
 CipherSuite list for TLSv1.1 exported to TLSv11Ciphers.csv
 CipherSuite list for TLSv1.2 exported to TLSv12Ciphers.csv
-List of websites with weak ciphersuites exported to WeakCipherSuiteWebsites.csv
 Security Protocol data exported to Packages.csv
 
 

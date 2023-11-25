@@ -11,14 +11,17 @@ import sys
 class FT(object):
 	def __init__(self, stream):
 		self.stream = stream
+
 	def write(self, data):
 		self.stream.write(data)
 		filestr.write(data)
 		self.stream.flush()
+
 	def writelines(self, datas):
 		self.stream.writelines(datas)
 		filestr.writelines(datas)
 		self.stream.flush()
+
 	def __getattr__(self, attr):
 		return getattr(self.stream, attr)
 	
@@ -76,7 +79,7 @@ elif args.websites:
     internals, externals = [], []
     for i in iplist:
         ip = i.split('.')
-        if ip[0]=='130' and ip[1]=='207':
+        if ip[0]=='164' and ip[1]=='100':
             internals.append(i)
 
     for w in websites:
