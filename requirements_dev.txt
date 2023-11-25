@@ -1,5 +1,5 @@
 flake8==6.1.0
-pytest==6.2.5
+pytest==7.4.3
 pytest-cov==2.12.1
 mypy===0.981
 pandas===2.1.3
