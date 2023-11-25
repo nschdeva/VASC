@@ -26,7 +26,7 @@ class FT(object):
 		return getattr(self.stream, attr)
 	
 filestr = open('./Output/Output.log', 'w')
-sys.stdout = FT(sys.stdout)
+sys.stdout = FT(sys.stdout) # type: ignore
 
 
 parser = argparse.ArgumentParser(description = 'Enter arguments for filename and mode of operation')

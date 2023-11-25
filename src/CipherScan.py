@@ -34,7 +34,7 @@ def cscan(websites, vulnerable, siteDict):
 						  shell=True, capture_output=True)
 		outstr = output.stdout.decode('UTF-8')
 		#fout = open('Site - '+w+'.txt', 'w+')
-		outstr = outstr.split('\n')
+		outstr = outstr.split('\n') # type: ignore
 		for i in range(len(outstr)):
 			if 'SSLv2:' in outstr[i]:
 				i += 2
@@ -161,9 +161,9 @@ def cscan(websites, vulnerable, siteDict):
 		packages.loc[w, 'IP'] = siteDict[w]
 	
 	for i in [siteciphersSSLv2, siteciphersSSLv3, siteciphersTLS10, siteciphersTLS11, siteciphersTLS12]:
-		i.replace(float('nan'), 'N', inplace=True)
-		for w in i.index:
-			i.loc[w, 'IP'] = siteDict[w]
+		i.replace(float('nan'), 'N', inplace=True) # type: ignore
+		for w in i.index: # type: ignore
+			i.loc[w, 'IP'] = siteDict[w] # type: ignore
 		
 	print('\n')
 	
