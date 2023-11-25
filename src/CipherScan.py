@@ -7,7 +7,7 @@ try:
 except:
 	print('\nFile WeakCiphers.csv can\'t be opened\n')
 else:
-	givenwclist = np.unique(list(givenwclist.iloc[:,0]))
+	givenwclist = lu.unique(list(givenwclist.iloc[:,0]))
 
 
 siteciphersSSLv2 = pd.DataFrame(columns = ['Website', 'IP']).set_index('Website')
