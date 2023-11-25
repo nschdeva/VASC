@@ -6,9 +6,9 @@ Scanning sites listed in the file.
 	catalog.gatech.edu | 12.175.6.54
 	coi.research.gatech.edu/ | Cannot establish connection
 	facilities.gatech.edu/submit-detour-notice | Cannot establish connection
-	gatech.instructure.com | 52.45.157.1
+	gatech.instructure.com | 52.21.245.37
 	github.gatech.edu | 130.207.175.93
-	health.gatech.edu | 34.215.37.29
+	health.gatech.edu | 34.216.237.15
 	hr.gatech.edu/careers | Cannot establish connection
 	omscs.gatech.edu | 130.207.7.95
 	oscar.gatech.edu | 130.207.176.30
@@ -24,10 +24,14 @@ Unavailable list:
 	hr.gatech.edu/careers
 	registrar.gatech.edu/calendar/
 	www.gatech.edu/offices-and-departments
+pd Empty DataFrame
+Columns: []
+Index: []
+websites ['buzzport.gatech.edu', 'career.gatech.edu', 'catalog.gatech.edu', 'gatech.instructure.com', 'github.gatech.edu', 'health.gatech.edu', 'omscs.gatech.edu', 'oscar.gatech.edu', 'scholars.em.gatech.edu', 'welcomehome.gatech.edu']
 
 List of websites that were hosted on external IP's exported to Externals.csv
 
-Proceeding with websites that lie in the network 164.100.*.* 
+Proceeding with websites that lie in the network 130.207.*.* 
 IP list:
 	130.207.188.44	| buzzport.gatech.edu
 	130.207.175.93	| github.gatech.edu

@@ -11,14 +11,17 @@ import sys
 class FT(object):
 	def __init__(self, stream):
 		self.stream = stream
+
 	def write(self, data):
 		self.stream.write(data)
 		filestr.write(data)
 		self.stream.flush()
+
 	def writelines(self, datas):
 		self.stream.writelines(datas)
 		filestr.writelines(datas)
 		self.stream.flush()
+
 	def __getattr__(self, attr):
 		return getattr(self.stream, attr)
 	
@@ -72,7 +75,8 @@ elif args.websites:
 
     iplist = np.unique(iplist)
     websites = list(siteDict)
-
+    print("pd", pd.DataFrame())
+    print("websites", websites)
     internals, externals = [], []
     for i in iplist:
         ip = i.split('.')
@@ -94,7 +98,7 @@ elif args.websites:
         print('\nList of websites that were hosted on external IP\'s exported to Externals.csv')
         
         
-    print('\nProceeding with websites that lie in the network 164.100.*.* \nIP list:')
+    print('\nProceeding with websites that lie in the network 130.207.*.* \nIP list:')
     for w in websites:
         print("\t" + siteDict[w] + "\t| " + w)
         

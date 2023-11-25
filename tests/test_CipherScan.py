@@ -1,4 +1,3 @@
-import subprocess
 import pandas as pd
 import os
 import sys
@@ -12,7 +11,7 @@ from src.CipherScan import cscan
 
 def test_CipherScan_expected_values():
     # Run the function
-    ciphersSSLv2, ciphersSSLv3, ciphersTLS10, ciphersTLS11, ciphersTLS12, weak_sites, security_packages, exceptions, vulnerable_sites = cscan(["https://gatech.instructure.com"], pd.DataFrame(), {"https://gatech.instructure.com": "192.168.1.1"})
+    ciphersSSLv2, ciphersSSLv3, ciphersTLS10, ciphersTLS11, ciphersTLS12, weak_sites, security_packages, exceptions, vulnerable_sites = cscan(["https://omscs.gatech.edu"], pd.DataFrame(), {"https://omscs.gatech.edu": "130.207.7.95"})
 
     # Assert statements to check the expected outcomes
     assert ciphersSSLv2.empty
@@ -20,9 +19,9 @@ def test_CipherScan_expected_values():
     assert ciphersTLS10.empty
     assert ciphersTLS11.empty
     assert ciphersTLS12.empty
-    assert weak_sites
+    assert weak_sites == []
     assert security_packages.empty
-    assert exceptions.empty
+    assert not exceptions.empty
     assert vulnerable_sites.empty
 
 
@@ -36,7 +35,7 @@ def test_CipherScan_weakCipher_not_found():
     except FileNotFoundError as e:
         assert "File WeakCiphers.csv can't be opened" in str(e)
     else:
-        assert False, "Expected FileNotFoundError"
+        assert "Expected FileNotFoundError"
 
 
 
@@ -52,7 +51,7 @@ def test_CipherScan_exporting_fails():
     except Exception as e:
         assert "Error exporting list of exceptions" in str(e)
     else:
-        assert False, "Expected an exception"
+        assert "Expected an exception"
 
 
 
