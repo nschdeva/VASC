@@ -2,11 +2,11 @@
 
 Scanning sites listed in the file.
 	buzzport.gatech.edu | 130.207.188.44
-	career.gatech.edu | 34.215.37.29
+	career.gatech.edu | 34.216.237.15
 	catalog.gatech.edu | 12.175.6.54
 	coi.research.gatech.edu/ | Cannot establish connection
 	facilities.gatech.edu/submit-detour-notice | Cannot establish connection
-	gatech.instructure.com | 52.21.245.37
+	gatech.instructure.com | 44.219.234.163
 	github.gatech.edu | 130.207.175.93
 	health.gatech.edu | 34.216.237.15
 	hr.gatech.edu/careers | Cannot establish connection
@@ -14,7 +14,7 @@ Scanning sites listed in the file.
 	oscar.gatech.edu | 130.207.176.30
 	registrar.gatech.edu/calendar/ | Cannot establish connection
 	scholars.em.gatech.edu | 130.207.188.46
-	welcomehome.gatech.edu | 34.215.37.29
+	welcomehome.gatech.edu | 34.216.237.15
 	www.gatech.edu/offices-and-departments | Cannot establish connection
 
 File "Unavailable.csv" created with list of non-accessible websites.

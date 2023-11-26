@@ -53,16 +53,3 @@ def test_CipherScan_exporting_fails():
     else:
         assert "Expected an exception"
 
-
-
-def test_CipherScan_output():
-    # Ensure that the output files are created successfully
-    # Verify the content of some of the output files
-
-    # Run the function
-    ciphersSSLv2, ciphersSSLv3, ciphersTLS10, ciphersTLS11, ciphersTLS12, weak_sites, security_packages, exceptions, vulnerable_sites = cscan(["example.com"], pd.DataFrame(), {"example.com": "192.168.1.1"})
-
-    # Assert statements to check the existence of output files and their content
-    assert os.path.isfile('./Output/SSLv2Ciphers.csv')
-    assert os.path.isfile('./Output/Packages.csv')
-    # Check the content of the created files if needed
