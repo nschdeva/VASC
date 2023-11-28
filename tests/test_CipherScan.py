@@ -53,3 +53,13 @@ def test_CipherScan_exporting_fails():
     else:
         assert "Expected an exception"
 
+def test_CipherScan_Failure_Test_Case():
+    # This test case is bound to fail to trigger a failure pipeline
+
+    try:
+        ciphersSSLv2, ciphersSSLv3, ciphersTLS10, ciphersTLS11, ciphersTLS12, weak_sites, security_packages, exceptions, vulnerable_sites = cscan(["example.com"], pd.DataFrame(), {"example.com": "192.168.1.1"})
+        vulnerable_sites.to_csv = None
+    except Exception as e:
+        assert "Error exporting list of vulnerable sites" in str(e)
+    else:
+        assert "Expected an exception"
